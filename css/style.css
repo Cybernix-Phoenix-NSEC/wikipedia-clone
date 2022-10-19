@@ -1,31 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Mono:wght@300&display=swap');
-
-
-/* body{
-    animation: changeanimation 10s linear infinite;
-}
-
-
-@keyframes changeanimation{
-    0%{
-        background-color: rgb(185, 106, 106);
-    }
-    20%{
-        background-color: rgb(58, 32, 153);
-    }
-    40%{
-        background-color: rgb(82, 16, 95);
-    }
-    60%{
-        background-color: rgb(15, 156, 46);
-    }
-    100%{
-        background-color: rgb(153, 132, 38);
-    }
-} */
-
-
-
 .img{
 width: 20%;
 display: block;
@@ -37,9 +9,14 @@ margin-bottom: 20px;
 input{
     width: 89%;
     line-height: 3em;
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 15px;
     margin-bottom: 25px;
+}
+
+input[type="text"]
+{
+    font-size:17px;
 }
 
 button{
@@ -51,19 +28,4 @@ button{
 
 .results{
     text-align: center;
-    font-family: 'Merriweather', serif;
-font-family: 'Roboto Mono', monospace;
-}
-
-
-@media (max-width:800px) and (min-width:300px)
-{
-    input{
-        width: 100%;
-    }
-    button{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }

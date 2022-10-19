@@ -25,7 +25,6 @@ async function getResult(searchval)
 {
     const response = await fetch(apiUrl+searchval);
     const result = await response.json();
-    // console.log(result);
     if (result.query.search.length == 0) {
         alert("Not found!!");
         search.value = "";
