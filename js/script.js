@@ -12,10 +12,12 @@ form.addEventListener("submit",(e)=>{
 
     if(searchvalue === ""){
         alert("Search is empty");
-       
+        document.getElementById("results").style.visibility="hidden";
     }
 
     else{
+        // document.getElementById("results").style.visibility="visible";
+        // document.getElementById("results").innnerHTML=" `<h2>Hang on, while we search that for you</h2>` ";
         getResult(searchvalue);
     }
 })
@@ -31,7 +33,7 @@ async function getResult(searchval)
     }
     else{
         displayResult(result);
-        search.value = "";
+        search.value = searchval;
     }
 }
 
@@ -41,14 +43,16 @@ function displayResult(results)
 
     results.query.search.forEach((e)=>{
         var resultUrl = `https://en.wikipedia.org/?curid=${e.pageid}`
+        document.getElementById("results").style.visibility="visible";
         printValue += 
 
         `
-       
-            <h2>${e.title}</h2>
-            <a href=${resultUrl} target="__blank">Know More</a>
+    
+            <h2>${e.title} (<a href=${resultUrl} target="__blank" style="text-decoration:none;">know more</a>) </h2>
             <p>${e.snippet}</p>
-            <h3>Time: ${e.timestamp}</h3>
+            <h4>Time: ${e.timestamp}</h4>
+            <hr>
+
         `
         searchResult.innerHTML = printValue
     })
