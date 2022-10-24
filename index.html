@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wikipedia Clone</title>
-    <script
-      src="https://kit.fontawesome.com/977b2ae4d8.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body class="bg">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wikipedia Clone</title>
+  <script src="https://kit.fontawesome.com/977b2ae4d8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <img id="logo" src="./img/img.png" alt="Wikipedia Logo" />
+  <form>
     <div class="search">
-      <img class="img" src="./img/img.png" alt="" />
-
-      <form action="">
-        <input type="text" placeholder="Search anything you want.." />
-
-        <button type="submit">
-          <i class="fas fa-search fa-lg"></i>
-        </button>
-      </form>
+      <input type="text" class="searchTerm" placeholder="Type Your Keyword Here...">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
     </div>
+  </form>
 
-    <section>
-      <div class="results" id="results"></div>
-    </section>
-
-    <script src="./js/script.js"></script>
-  </body>
+  <div class="results" id="results"></div>
+  <script src="./js/script.js"></script>
+</body>
 </html>

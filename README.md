@@ -1,6 +1,6 @@
 # wikipedia clone
 
-## How to use this webiste?
+## How to use this website?
 
 ### clone this repo
 
