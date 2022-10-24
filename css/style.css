@@ -52,5 +52,12 @@ button{
     visibility: hidden;
     background-color: #c5c6c7;
 }
+#NotFound
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px black ;
+}
 
 
