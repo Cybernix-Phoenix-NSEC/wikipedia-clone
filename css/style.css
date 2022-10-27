@@ -12,6 +12,13 @@ body,
 a:link, a:visited, a:active {
     color: var(--font_color);
 }
+#NotFound
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px black ;
+}
 
 
 
